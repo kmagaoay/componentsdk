@@ -70,18 +70,35 @@ function App() {
   }
 
   return (
-    <div className="App">
+<div className="App">
       <main>
-        <h1>Kelly Meeting WebSDK Sample</h1>
+        <img src="https://zoom.us/account/branding/p/a86a656f-ca3c-402b-960d-ab2500c6aad3.png" alt="Magaoay INC" width="100" height="33"></img>
+      
+        <h1>KelFIT WebSDK Component View Sample</h1>
 
         {/* For Component View */}
         <div id="meetingSDKElement">
           {/* Zoom Meeting SDK Component View Rendered Here */}
         </div>
 
-        <button onClick={getSignature}>Join Meeting</button>
+        <button onClick={getSignature}>Join with Trainer Now</button>
       </main>
-    </div>
+  <h2>Fitness Goals</h2>
+      <p>LEAN MUSCLE</p>
+      <p>WEGHT LOSS</p>
+      <p>ENDURANCE</p>
+      <p>STRENGTH</p>
+
+      <h3>Rate Yourself</h3>
+      <p>Excellent Shape</p>
+      <p>I'm doing okay</p>
+      <p>Need some work</p>
+
+      
+</div>
+
+
+
   );
 }
 
