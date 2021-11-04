@@ -35,8 +35,18 @@
     <meta http-equiv="origin-trial" content="Am310OsDbptyOEfV0HEwWQWJ+2MKhPqHdeLt2GbD8jo+mlkXHqivDcj+/7GWIC4S5DNAoM4AbMu5b7/kQYrK/QEAAABpeyJvcmlnaW4iOiJodHRwczovL2ttYWdhb2F5LmdpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiVW5yZXN0cmljdGVkU2hhcmVkQXJyYXlCdWZmZXIiLCJleHBpcnkiOjE2NTg4Nzk5OTl9">
   </head>
   <body>
+
+    <form id="frm1" action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br><br>
+      <input type="button" onclick="myFunction()" value="Submit">
+    </form>
     
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+    function myFunction() {
+      document.getElementById("frm1").submit();
+    }
+    </script><noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
     <script src="https://source.zoom.us/2.0.1/lib/vendor/react.min.js"></script>
@@ -46,6 +56,7 @@
     <script src="https://source.zoom.us/2.0.1/lib/vendor/lodash.min.js"></script>
     <script src="https://source.zoom.us/zoom-meeting-2.0.1.min.js"></script>
 
+    
     <!-- For Component View -->
     <script src="https://source.zoom.us/2.0.1/zoom-meeting-embedded-2.0.1.min.js"></script>
 
@@ -59,5 +70,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
   </body>
 </html>
