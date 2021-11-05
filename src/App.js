@@ -74,7 +74,7 @@ function App() {
       <main>
         <img src="https://zoom.us/account/branding/p/a86a656f-ca3c-402b-960d-ab2500c6aad3.png" alt="Magaoay INC" width="100" height="33"></img>
       
-        <h1>KelFIT WebSDK Component View Sample</h1>
+        <h1> KelFIT WebSDK Component View Sample</h1>
 
         {/* For Component View */}
         <div id="meetingSDKElement">
