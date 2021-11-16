@@ -51,7 +51,7 @@ function App() {
               text: 'Load Form',
               className: 'CustomButton',
               onClick: () => {
-                console.log('custom button');
+                console.log('Hello');
               }
             }
           ]
@@ -72,32 +72,24 @@ function App() {
   return (
 <div className="App">
       <main>
-        <img src="https://zoom.us/account/branding/p/a86a656f-ca3c-402b-960d-ab2500c6aad3.png" alt="Magaoay INC" width="100" height="33"></img>
-      
-        <h1> KelFIT WebSDK Component View Sample</h1>
-
+        
+        <h1>Coach Anthony</h1>
+        <img src="https://zoom.us/account/branding/p/50f55c16-9500-42ea-bf54-cb4148646883.png" alt="Magaoay INC" width="120" height="120"></img>
+        
         {/* For Component View */}
         <div id="meetingSDKElement">
           {/* Zoom Meeting SDK Component View Rendered Here */}
         </div>
 
-        <button onClick={getSignature}>Join with Trainer Now</button>
+        <button onClick={getSignature}>MeetNow with Coach</button>
       </main>
-  <h2>Fitness Goals</h2>
-      <p>LEAN MUSCLE</p>
-      <p>WEGHT LOSS</p>
-      <p>ENDURANCE</p>
-      <p>STRENGTH</p>
-
-      <h3>Rate Yourself</h3>
+  <h2>Training Days</h2>
+      <p>Schedule an appointment with a trainer</p>
+      <p>Enter fitness goals</p>
+  <h3>Rate Yourself</h3>
       <p>Excellent Shape</p>
       <p>I'm doing okay</p>
-      <p>Need some work</p>
-
-      
 </div>
-
-
 
   );
 }
