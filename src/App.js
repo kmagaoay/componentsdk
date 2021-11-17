@@ -51,7 +51,7 @@ function App() {
               text: 'Load Form',
               className: 'CustomButton',
               onClick: () => {
-                console.log('Hello');
+                console.log('custom button');
               }
             }
           ]
