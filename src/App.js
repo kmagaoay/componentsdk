@@ -3,6 +3,15 @@ import React from 'react';
 import './App.css';
 
 declare var ZoomMtgEmbedded
+declare var ZoomMtg
+
+ZoomMtg.setZoomJSLib('https://source.zoom.us/2.1.0/lib', '/av');
+
+ZoomMtg.preLoadWasm();
+ZoomMtg.prepareWebSDK();
+// loads language files, also passes any error messages to the ui
+ZoomMtg.i18n.load('en-US');
+ZoomMtg.i18n.reload('en-US');
 
 function App() {
 
