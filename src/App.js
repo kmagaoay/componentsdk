@@ -52,7 +52,8 @@ function App() {
               className: 'CustomButton',
               onClick: () => {
                 console.log('custom button');
-              }
+              
+              }          
             }
           ]
         }
