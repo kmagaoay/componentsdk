@@ -84,7 +84,7 @@ function App() {
 
         <button onClick={getSignature}>MeetNow with Coach</button>
       </main>
-  <h2>Training Days</h2>
+  <h2>Training Day</h2>
       <p>Schedule an appointment with a trainer</p>
       <p>Enter fitness goals</p>
   <h3>Rate Yourself</h3>
