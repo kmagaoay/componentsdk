@@ -86,10 +86,10 @@ function App() {
       </main>
   <h2>Training Day</h2>
       <p>Schedule an appointment with a trainer</p>
-      <p>Enter fitness goals</p>
+      
   <h3>Rate Yourself</h3>
       <p>Excellent Shape</p>
-      <p>I'm doing okay</p>
+ 
 </div>
 
   );
