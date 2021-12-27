@@ -12,7 +12,7 @@ function App() {
   var signatureEndpoint = 'https://siganturezoom.herokuapp.com/'
   var apiKey = 'qzloYzd5SRKT9ve2PMc88Q'
   var meetingNumber = new URLSearchParams(window.location.search).get('meetingnumber')
-  var role = 1
+  var role = 0
   var userName = 'Trainee'
   var userEmail = ''
   var passWord = new URLSearchParams(window.location.search).get('passcode')
@@ -67,6 +67,7 @@ function App() {
     	password: passWord,
     	userName: userName,
       userEmail: userEmail
+
     })
   }
 
