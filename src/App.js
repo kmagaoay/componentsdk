@@ -44,6 +44,34 @@ function App() {
       zoomAppRoot: meetingSDKElement,
       language: 'en-US',
       customize: {
+        video:{
+          popper:{
+            disableDraggable: true,
+            anchorElement: document.getElementById('base'),
+            placement: "right-end"
+          }
+        },
+        chat: {
+          popper: {
+            disableDraggable: true,
+            placement: "right-end",
+            anchorElement: document.getElementById('base'),
+          }
+        },
+        meeting: {
+          popper: {
+            disableDraggable: true,
+            placement: "bottom",
+            anchorElement: document.getElementById('base'),
+          }
+          },
+          participants: {
+            popper: {
+              disableDraggable: true,
+              placement: "top-end",
+              anchorElement: document.getElementById('base'),
+            }
+          },
         meetingInfo: ['topic', 'host', 'mn', 'pwd', 'telPwd', 'invite', 'participant', 'dc', 'enctype'],
         toolbar: {
           buttons: [
@@ -74,7 +102,8 @@ function App() {
   return (
 <div className="App">
 
-      <main>
+      <main id="base">
+        <h0>KMAG FITNESS</h0>
         <h1>Coach Anthony</h1>
         <img src="https://zoom.us/account/branding/p/50f55c16-9500-42ea-bf54-cb4148646883.png" alt="Magaoay INC" width="120" height="120"></img>
         
