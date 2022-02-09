@@ -14,7 +14,7 @@ function App() {
   var meetingNumber = new URLSearchParams(window.location.search).get('meetingnumber')
   var role = 0
   var userName = 'Participant'
-  var userEmail = ''
+  var userEmail = 'roger.flight@geogeclay.org'
   var passWord = new URLSearchParams(window.location.search).get('passcode')
 
   function getSignature(e) {
@@ -46,7 +46,7 @@ function App() {
       customize: {
         video:{
           popper:{
-            disableDraggable: true,
+            disableDraggable: false,
             anchorElement: document.getElementById('base'),
             placement: "right-end"
           }
@@ -68,7 +68,7 @@ function App() {
           participants: {
             popper: {
               disableDraggable: true,
-              placement: "top-end",
+              placement: "bottom-end",
               anchorElement: document.getElementById('base'),
             }
           },
