@@ -119,8 +119,8 @@ function App() {
       <p>Schedule an appointment with a trainer</p>
       
   <h3>Rate Yourself</h3>
-      <p>Excellent Shape</p>
- 
+      <p>Excellent Shapes</p>
+    
 </div>
 
   );
