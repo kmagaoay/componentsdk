@@ -35,15 +35,15 @@ h3 {
   margin-left: 120px;
 }
 h4 {
-  margin-left: 120px
+  margin-left: 120px;
 }
 
+#joinzm {margin-left: 120px;
+}
 p {
   margin-left: 120px;
 }
-form {
-  margin-left: 120px;
-}
+
 main button:hover {
   background-color: #2681F2;
 }

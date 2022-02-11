@@ -48,12 +48,12 @@ function App() {
           popper:{
             disableDraggable: false,
             anchorElement: document.getElementById('base'),
-            placement: "right-end"
+            placement: "bottom",
           }
         },
         chat: {
           popper: {
-            disableDraggable: true,
+            disableDraggable: false,
             placement: "right-end",
             anchorElement: document.getElementById('base'),
           }
@@ -68,7 +68,7 @@ function App() {
           participants: {
             popper: {
               disableDraggable: true,
-              placement: "bottom-end",
+              placement: "top-end",
               anchorElement: document.getElementById('base'),
             }
           },
