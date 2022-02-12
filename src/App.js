@@ -39,37 +39,35 @@ function App() {
 
     let meetingSDKElement = document.getElementById('meetingSDKElement');
 
+    let meetingSDKVideoElement = document.getElementById('meetingSDKVideoElement')
+
+    let meetingSDKChatElement = document.getElementById('meetingSDKChatElement');
+
+    let meetingSDKParticipantElement = document.getElementById('meetingSDKParticipantElement')
+
     client.init({
-      debug: true,
       zoomAppRoot: meetingSDKElement,
       language: 'en-US',
       customize: {
         video:{
           popper:{
             disableDraggable: false,
-            anchorElement: document.getElementById('base'),
-            placement: "bottom",
+            anchorElement: meetingSDKVideoElement,
+            pacement: "top",
           }
         },
         chat: {
           popper: {
             disableDraggable: false,
-            placement: "right-end",
-            anchorElement: document.getElementById('base'),
+            anchorElement: meetingSDKChatElement,
+            placement: "right",
           }
         },
-        meeting: {
-          popper: {
-            disableDraggable: true,
-            placement: "bottom",
-            anchorElement: document.getElementById('base'),
-          }
-          },
           participants: {
             popper: {
               disableDraggable: true,
-              placement: "top-end",
-              anchorElement: document.getElementById('base'),
+              anchorElement: meetingSDKParticipantElement,
+              placement: "bottom",
             }
           },
         meetingInfo: ['topic', 'host', 'mn', 'pwd', 'telPwd', 'invite', 'participant', 'dc', 'enctype'],
@@ -102,9 +100,10 @@ function App() {
   return (
 <div className="App">
 
-      <main id="base">
-        <h0>KMAG FITNESS</h0>
-        <h1>Coach Anthony</h1>
+<main id="base">
+    <h0>KMAG FITNESS</h0>
+    <h1>Coach Anthony</h1>
+
         <img src="https://zoom.us/account/branding/p/50f55c16-9500-42ea-bf54-cb4148646883.png" alt="Magaoay INC" width="120" height="120"></img>
         
         {/* For Component View */}
@@ -114,13 +113,7 @@ function App() {
 
         <button onClick={getSignature}>MeetNow with Coach</button>
       </main>
-
-  <h2>Training Day</h2>
-      <p>Schedule an appointment with a trainer</p>
-      
-  <h3>Rate Yourself</h3>
-      <p>Excellent Shapes</p>
-    
+<p></p>
 </div>
 
   );

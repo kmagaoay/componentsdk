@@ -58,12 +58,29 @@
     <!-- For Component View -->
     <script src="https://source.zoom.us/2.2.0/zoom-meeting-embedded-2.2.0.min.js"></script> 
 
+<div class="row">
+  <div class="column">
+    <div id="meetingSDKElement"></div>
+  </div>
+</div class="column">
+    <h3>Training Day</h3>
+<!-- Calendly link widget begin -->
+<div id = "schedule">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/audrey-113?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Schedule a Session</a>
+</div>
+<!-- Calendly link widget end -->
+    
     <h4>Rather join with Zoom Desktop Client</h4>
 
     <div id = "joinzm"> 
     <a href="https://kelmagaoay.zoom.us/j/99617077912" target="_blank">Joing From Zoom App</a>
     </div>
-
+    <div class="column">
+      <div id="meetingSDKChatElement"></div>
+    </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
