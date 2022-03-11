@@ -13,10 +13,14 @@ function App() {
   var apiKey = 'qzloYzd5SRKT9ve2PMc88Q'
   var meetingNumber = new URLSearchParams(window.location.search).get('meetingnumber')
   var role = 0
-  var userName = 'Participant'
-  var userEmail = 'roger.flight@geogeclay.org'
+  var userName = 'fred'
+  var userEmail = 'fred@sam.com'
   var passWord = new URLSearchParams(window.location.search).get('passcode')
-
+  // pass in reg:
+  // Meeting:
+  // Webinar
+  var registrantToken = 'X3UNFvRFVHi3fG_2pF0XINJVzHcAT0v6enm8F_xgeC0.DQMAAAAVvTndWhZWUk52cXBFdFNLQzVJWU1nRl9ac1Z3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=NFVsOFUvcDNZZzMxM01BWlBRZXpWZz09&uuid=WN_zqEGHT0-TNy8fWrwUG36gQ'
+ 
   function getSignature(e) {
     e.preventDefault();
 
@@ -92,7 +96,8 @@ function App() {
     	meetingNumber: meetingNumber,
     	password: passWord,
     	userName: userName,
-      userEmail: userEmail
+      userEmail: userEmail,
+      tk: registrantToken
 
     })
   }

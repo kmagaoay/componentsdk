@@ -5,7 +5,7 @@ import './App.css';
 declare var ZoomMtgEmbedded
 declare var ZoomMtg
 
-ZoomMtg.setZoomJSLib('https://source.zoom.us/2.1.1/lib', '/av');
+ZoomMtg.setZoomJSLib('https://source.zoom.us/2.2.0/lib', '/av');
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
@@ -25,6 +25,7 @@ function App() {
   var userName = 'Trainee'
   var userEmail = ''
   var passWord = new URLSearchParams(window.location.search).get('passcode')
+  var registrantToken = ''
 
   function getSignature(e) {
     e.preventDefault();
@@ -76,6 +77,7 @@ function App() {
     	password: passWord,
     	userName: userName,
       userEmail: userEmail
+      tk: registrantToken
     })
   }
 
