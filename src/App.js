@@ -16,11 +16,8 @@ function App() {
   var userName = 'fred'
   var userEmail = 'fred@sam.com'
   var passWord = new URLSearchParams(window.location.search).get('passcode')
-  // pass in reg:
-  // Meeting:
-  // Webinar
-  var registrantToken = 'X3UNFvRFVHi3fG_2pF0XINJVzHcAT0v6enm8F_xgeC0.DQMAAAAVvTndWhZWUk52cXBFdFNLQzVJWU1nRl9ac1Z3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=NFVsOFUvcDNZZzMxM01BWlBRZXpWZz09&uuid=WN_zqEGHT0-TNy8fWrwUG36gQ'
- 
+  
+  
   function getSignature(e) {
     e.preventDefault();
 
@@ -96,8 +93,7 @@ function App() {
     	meetingNumber: meetingNumber,
     	password: passWord,
     	userName: userName,
-      userEmail: userEmail,
-      tk: registrantToken
+      userEmail: userEmail
 
     })
   }
