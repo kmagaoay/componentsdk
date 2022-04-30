@@ -13,8 +13,8 @@ function App() {
   var apiKey = 'qzloYzd5SRKT9ve2PMc88Q'
   var meetingNumber = new URLSearchParams(window.location.search).get('meetingnumber')
   var role = 0
-  var userName = 'Anthony'
-  var userEmail = '222@november.org'
+  var userName = 'Customer'
+  var userEmail = ''
   var passWord = new URLSearchParams(window.location.search).get('passcode')
   // pass in the registrant's token if your meeting or webinar requires registration. More info here:
   // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
