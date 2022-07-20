@@ -105,8 +105,8 @@ function App() {
 <div className="App">
 
 <main id="base">
-    <h0>KMAG FITNESS</h0>
-    <h1>Coach Anthony</h1>
+    <h0>KEL FITNESS</h0>
+    <h1>Life Coach</h1>
 
         <img src="https://zoom.us/account/branding/p/50f55c16-9500-42ea-bf54-cb4148646883.png" alt="Magaoay INC" width="120" height="120"></img>
         
