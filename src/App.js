@@ -13,7 +13,7 @@ function App() {
   var apiKey = 'qzloYzd5SRKT9ve2PMc88Q'
   var meetingNumber = new URLSearchParams(window.location.search).get('meetingnumber')
   var role = 0
-  var userName = 'Customer'
+  var userName = 'Customer1'
   var userEmail = 'Customer@bbb.com'
   var passWord = new URLSearchParams(window.location.search).get('passcode')
   // pass in the registrant's token if your meeting or webinar requires registration. More info here:
