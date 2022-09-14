@@ -1,16 +1,15 @@
 import React from 'react';
 
 import './App.css';
-
-declare var ZoomMtgEmbedded
+import ZoomMtgEmbedded from '@zoomus/websdk/embedded';
 
 function App() {
 
   const client = ZoomMtgEmbedded.createClient();
 
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
-  var signatureEndpoint = 'https://siganturezoom.herokuapp.com/'
-  var apiKey = 'qzloYzd5SRKT9ve2PMc88Q'
+  var signatureEndpoint = 'https://zmsign.herokuapp.com/'
+  var sdkKey = 'PfPapLCavJc2ZBjMkssNeqboLdBOpoAEXQTc'
   var meetingNumber = new URLSearchParams(window.location.search).get('meetingnumber')
   var role = 0
   var userName = 'Customer1'
@@ -90,7 +89,7 @@ function App() {
     });
 
     client.join({
-    	apiKey: apiKey,
+    	sdkKey: sdkKey,
     	signature: signature,
     	meetingNumber: meetingNumber,
     	password: passWord,
@@ -105,7 +104,7 @@ function App() {
 <div className="App">
 
 <main id="base">
-    <h0>KEL FITNESS</h0>
+
     <h1>Life Coach</h1>
 
         <img src="https://zoom.us/account/branding/p/50f55c16-9500-42ea-bf54-cb4148646883.png" alt="Magaoay INC" width="120" height="120"></img>
