@@ -114,7 +114,7 @@ function App() {
           {/* Zoom Meeting SDK Component View Rendered Here */}
         </div>
 
-        <button onClick={getSignature}>MeetNow with Coach</button>
+        <button onClick={getSignature}>MeetNow w Coach</button>
       </main>
 <p></p>
 </div>
