@@ -105,7 +105,7 @@ function App() {
 
 <main id="base">
 
-    <h1>Life Coach</h1>
+    <h1>Coach</h1>
 
         <img src="https://zoom.us/account/branding/p/50f55c16-9500-42ea-bf54-cb4148646883.png" alt="Magaoay INC" width="120" height="120"></img>
         
