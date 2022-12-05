@@ -12,7 +12,7 @@ function App() {
   var sdkKey = 'PfPapLCavJc2ZBjMkssNeqboLdBOpoAEXQTc'
   var meetingNumber = new URLSearchParams(window.location.search).get('meetingnumber')
   var role = 0
-  var userName = 'Customer1'
+  var userName = 'Customer'
   var userEmail = 'Customer@bbb.com'
   var passWord = new URLSearchParams(window.location.search).get('passcode')
   // pass in the registrant's token if your meeting or webinar requires registration. More info here:
@@ -114,7 +114,7 @@ function App() {
           {/* Zoom Meeting SDK Component View Rendered Here */}
         </div>
 
-        <button onClick={getSignature}>MeetNow w Coach</button>
+        <button onClick={getSignature}>MeetNow Coach</button>
       </main>
 <p></p>
 </div>
