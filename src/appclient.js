@@ -4,7 +4,7 @@ import './App.css';
 
 declare var ZoomMtg
 
-ZoomMtg.setZoomJSLib('https://source.zoom.us/2.2.0/lib', '/av');
+ZoomMtg.setZoomJSLib('https://source.zoom.us/3.8.10/lib', '/av');
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
